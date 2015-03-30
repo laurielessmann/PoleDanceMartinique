@@ -1,5 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
 * {
     margin: 0;
+}
+
+ul{
+    padding:0;
 }
 
 html, body{
@@ -7,46 +22,47 @@ html, body{
 }
 
 .page-wrap {
+ background-color:#f8deeb;
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -90px; 
+  margin-bottom: -90px;
+  width:100%;
+  max-width:800px;
+  margin:auto;
 }
+
+.page-wrap img{
+    display: block;
+    max-width:100%;
+}
+
 .page-wrap:after {
   content: "";
   display: block;
 }
 
 nav {
-    background-color: #ef767d; 
-    padding-top:10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-      z-index: 111;
-  margin-left: 500px;
-    margin-right: 500px
-    
+    background-color: #ef767d;  
 }
 
 header li {
-    list-style: none;
+    list-style:none;
     display: inline-block;
-    width: 12%;
+    width: 20%;
     position:relative;
-    left: 20%;
-    right: 20%;
-    text-align: center;
+    text-align:center; 
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-right: -5px;
 }
 
 
 h1 {
 color: black;
 font-family: Edwardian Script ITC;
-text-transform: underline;
 font-size: 50px; 
 text-align: center;
-padding-top: 20px;
+margin-top: 20px;
 }
 
 h2 {
@@ -54,23 +70,76 @@ h2 {
     font-family:sans-serif;
     font-size: 20px;
     text-decoration: underline;
+    font-family: serif;
 }
 
 p {
-    padding-top: 10px;
-    text-align: center;
-    font-family:sans-serif;
-    font-size: 15px;
+    padding-top: 12px;
+    text-align:justify;
+    font-family:sans-serif; 
+    font-size: 13px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    
 }
 
 footer {
     background-color: #ef767d; 
-    padding-top:20px;
-    padding-bottom: 20px;
+    width:100%;
+    max-width:800px;
+    margin:auto;
+}
+
+footer p {
+margin:0;
+}
+
+.bloc-img-left img{
+    float:left;
+    margin-right:40px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.bloc-img-left p{
+    margin-top: 25px;
+}
+    
+
+.bloc-img-right img{
+    float:left;
+    margin-right: 50px;
+    border-radius: 15px;
+    
+}
+
+.bloc-img-right ol{
+    margin-top:30px;
+    list-style: none;
+}
+
+.bloc-img-right li{
+    margin-top: 10px;
+}
+
+.planning img{
+    margin-left: 125px;
     border-radius: 10px;
+    margin-top: 5px;
+}
+
+h2{
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 body {
-    background-image:url(image/background.jpg);
-    background-size: cover;
+    /*background-image:url(../image/background.jpg);
+    background-size:cover;*/
+}
+
+.sticky{
+    min-height:calc(100% - 25px);
 }
